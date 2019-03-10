@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('', 'Welcome');
+
+Route::get('upload', 'Upload');
+
+Route::post('upload/picture', 'Upload@upload');
