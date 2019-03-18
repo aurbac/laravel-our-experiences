@@ -26,6 +26,6 @@ class Welcome extends Controller
             return view('welcome', ['pictures' => FALSE]);
         }
         $pictures = Pictures::all()->sortByDesc("created_at");
-        return view('welcome', ['pictures' => $pictures]);
+        return view('welcome', ['pictures' => $pictures, 'bucket_name' => env('AWS_BUCKET')]);
     }
 }
