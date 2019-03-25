@@ -21,12 +21,11 @@
             <input name="picture" id="picture" type="file" class="custom-file-input" id="validatedCustomFile" accept=".jpg, .jpeg" required>
             <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
         </div>
-
+        
         <br><br>
         <button class="btn btn-primary" type="submit">Submit</button>
 
     </form>
-
 
 @if (\Session::has('success'))
     <div class="alert alert-success">
@@ -38,9 +37,6 @@
 
         </div>
     </div>
-
-
-
 
     </div>
 </div>
