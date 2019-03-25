@@ -11,6 +11,7 @@
         <h2 class="text-muted">Upload your Picture</h2>
 
         <form class="was-validated" enctype="multipart/form-data" method="post" action="{{url('upload/picture')}}">
+        <input type="hidden" value="{{ csrf_token() }}" name="_token">
         <div class="mb-3">
             <label for="validationTextarea">Description</label>
             <textarea name="description" id="description" class="form-control is-invalid" id="validationTextarea" placeholder="Tell me something about your experience..." required></textarea>
@@ -37,6 +38,9 @@
 
         </div>
     </div>
+
+
+
 
     </div>
 </div>
