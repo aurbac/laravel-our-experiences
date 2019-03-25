@@ -20,7 +20,6 @@
             <input name="picture" id="picture" type="file" class="custom-file-input" id="validatedCustomFile" accept=".jpg, .jpeg" required>
             <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
         </div>
-        <input type="hidden" value="{{ csrf_token() }}" name="_token">
 
         <br><br>
         <button class="btn btn-primary" type="submit">Submit</button>
@@ -38,9 +37,6 @@
 
         </div>
     </div>
-
-
-
 
     </div>
 </div>
